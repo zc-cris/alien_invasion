@@ -1,10 +1,12 @@
 # zc-cris
 import pygame
+from pygame.sprite import Sprite
 
 
-class Ship():
+class Ship(Sprite):
     def __init__(self, screen, settings):
         '''初始化飞船的位置'''
+        super().__init__()
         self.screen = screen
         self.settings = settings
 
